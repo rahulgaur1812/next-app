@@ -5,7 +5,7 @@ import Navbar from "./navbar";
 const Layout = (props) => {
     const { children, footerstatus } = props
     return (
-        <>
+        <div className="container-fluid">
             {true ? (
                 <div>
                     <Header />
@@ -22,7 +22,7 @@ const Layout = (props) => {
                     {!footerstatus && <Footer />}
                 </div>
             )}
-        </>
+        </div>
 
 
     )
