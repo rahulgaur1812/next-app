@@ -20,7 +20,7 @@ const Head1 = () => {
                             <Link className="nav-link" href="/contact">Contact</Link>
                         </li>
                         <li class="nav-item">
-                            <Link className="nav-link" href="/courses">Courses</Link>
+                            <Link href="/courses" className="nav-link">Courses</Link>
                         </li>
                         <li class="nav-item">
                             <Link className="nav-link" href="/facilities">Facilities</Link>
