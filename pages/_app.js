@@ -1,7 +1,16 @@
 import '../styles/globals.css'
+import Layout from '../common/layout'
 
+// function MyApp({ Component, pageProps }) {
+//   return <Component {...pageProps} />
+// }
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  //console.log('pageprops', pageProps);
+  return (
+    <Layout footerstatus={pageProps.footerstatus}>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 export default MyApp
