@@ -8,7 +8,6 @@ export const getStaticProps = async () => {
     }
 }
 const Courses = (props) => {
-
     const productData = props.productData;
     //console.log("props", productData);
     return (
@@ -16,24 +15,16 @@ const Courses = (props) => {
             {productData.map((item, index) => {
                 console.log("item", item);
                 return (
-                    // <div className="advantage" key={index}>
-                    //     {item.title}
-                    // </div>
-                    // <div className="card" key={index} >
-                    //     <img className="card-img-top" src={item.image} alt="Card image cap" />
-                    //     <div className="card-body">
-                    //         <h5 className="card-title">{item.title}</h5>
-                    //         <p className="card-text">{item.description}</p>
-                    //         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
-                    //     </div>
-                    // </div>
                     <div class="col-sm-3" key={index}>
-                        <div class={`card ${styles.card} `}>
-                            <img className={styles.cardimgtop} src={item.image} alt="Card image cap" />
+                        <div className={`card ${styles.card} `}>
+                            <div class={styles.imagecontainer}>
+                                <img className={styles.cardimgtop} src={item.image} alt="Card image cap" />
+                            </div>
+
                             <div class="card-body">
-                                <h5 class="card-title">{item.title}</h5>
+                                <h5 className={`card-title ${styles.title}`}>{item.title}</h5>
                                 <p className="card-text"><small className="text-muted">Category: {item.category}</small></p>
-                                <p class="card-text">{item.description}</p>
+                                <p className={`card-text ${styles.description}`}>{item.description}</p>
                                 <p className="card-text"><small className="text-muted">Price: Rs {item.price}</small></p>
                             </div>
                         </div>
@@ -41,7 +32,7 @@ const Courses = (props) => {
                 );
             })}
 
-        </div>
+        </div >
     )
 }
 export default Courses
