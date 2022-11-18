@@ -4,7 +4,7 @@ const NotFound = () => {
     const router = useRouter();
     useEffect(() => {
         setTimeout(() => {
-            router.push('/contact');
+            router.push('/404');
         }, 3000)
     }, [])
     return (

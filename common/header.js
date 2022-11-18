@@ -5,9 +5,9 @@ import Head3 from "./head3";
 const Header = () => {
     return (
         <div>
+            {/* <Head2 />
+            <Head3 /> */}
             <Head1 />
-            <Head2 />
-            <Head3 />
         </div>
     )
 }

@@ -9,7 +9,7 @@ const Layout = (props) => {
             {true ? (
                 <div>
                     <Header />
-                    <Navbar />
+                    {/* <Navbar /> */}
                     {children}
                     {!footerstatus && <Footer />}
 
@@ -17,7 +17,7 @@ const Layout = (props) => {
             ) : (
                 <div>
                     <Header />
-                    <Navbar />
+                    {/* <Navbar /> */}
                     {children}
                     {!footerstatus && <Footer />}
                 </div>
