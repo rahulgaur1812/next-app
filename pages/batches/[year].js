@@ -34,7 +34,7 @@ const Year = ({ res }) => {
         <div className="row">
 
             <div>
-                name : {res.title}
+                Title : {res.title}
             </div>
         </div >
     )
