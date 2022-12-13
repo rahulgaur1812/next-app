@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import style from '../styles/header.module.scss';
 const Head1 = () => {
     return (
         <div>
@@ -33,10 +34,15 @@ const Head1 = () => {
                         </li>
 
                     </ul>
-                    <form className="form-inline my-2 my-lg-0">
+                    <ul className={`col-lg-4 ${style.textright}`}>
+                        <li className={`nav-item ${style.logintext}`}><Link href="/login">Login</Link></li>
+                        <li className="nav-item"><button type="button" className={`btn btn-primary ${style.btnprimary}`}><Link href="/register">Register</Link></button></li>
+                    </ul>
+                    {/* <form className="form-inline my-2 my-lg-0">
                         <input className="form-control mr-sm-2" type="search" placeholder="Search" />
-                        {/* <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> */}
-                    </form>
+                        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form> */}
+
                 </div>
             </nav>
 

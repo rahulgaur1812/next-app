@@ -1,0 +1,23 @@
+.textright {
+  flex-direction: row-reverse;
+  display: flex;
+  margin: 0;
+}
+.logintext {
+  margin-left: 50px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-right: 20px;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.btnprimary {
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
