@@ -2,7 +2,7 @@ import React from "react";
 import Header from '../common/header';
 import Footer from '../common/footer';
 import Navbar from '../common/navbar';
-import styles from '../styles/About.module.css';
+import styles from '../styles/About.module.scss';
 import Image from "next/image";
 import Head from "next/head";
 const About = () => {

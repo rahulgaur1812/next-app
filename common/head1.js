@@ -4,34 +4,38 @@ const Head1 = () => {
     return (
         <div>
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4 p-2">
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4 p-2">
+                <button className="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
                 <Link className="navbar-brand" href="/">Altudo</Link>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav col-lg-8">
-                        <li class="nav-item active">
-                            {/* <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> */}
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul className="navbar-nav col-lg-8">
+                        {/* <li className="nav-item active">
+                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                             <Link className="nav-link" href="/about">About</Link>
-                        </li>
-                        <li class="nav-item">
+                        </li> */}
+                        <li className="nav-item">
                             <Link className="nav-link" href="/contact">Contact</Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link href="/courses" className="nav-link">Courses</Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link className="nav-link" href="/facilities">Facilities</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link className="nav-link" href="/product">Products</Link>
+                        <li className="nav-item">
+                            <Link className="nav-link" href="/products">Products</Link>
                         </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" href="/batches">Batches</Link>
+                        </li>
+
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" />
-                        {/* <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> */}
+                    <form className="form-inline my-2 my-lg-0">
+                        <input className="form-control mr-sm-2" type="search" placeholder="Search" />
+                        {/* <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> */}
                     </form>
                 </div>
             </nav>

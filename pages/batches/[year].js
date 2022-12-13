@@ -1,13 +1,11 @@
 import React from "react";
 export const getStaticPaths = async () => {
-
     const response = await fetch('https://fakestoreapi.com/products');
     const arr = await response.json();
     const paths = arr.map((item) => {
         return {
             params: { year: item.id.toString() }
         }
-
     })
     return {
         paths,
@@ -28,11 +26,9 @@ export const getStaticProps = async (context) => {
     }
 }
 const Year = ({ res }) => {
-    //console.log("props", productData);
-
+    console.log("res", res);
     return (
         <div className="row">
-
             <div>
                 Title : {res.title}
             </div>

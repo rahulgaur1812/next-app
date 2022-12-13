@@ -15,13 +15,13 @@ const ProductList = (props) => {
             {productData.map((item, index) => {
                 console.log("item", item);
                 return (
-                    <div class="col-sm-3" key={index}>
+                    <div className="col-sm-3" key={index}>
                         <div className={`card ${styles.card} `}>
-                            <div class={styles.imagecontainer}>
+                            <div className={styles.imagecontainer}>
                                 <img className={styles.cardimgtop} src={item.image} alt="Card image cap" />
                             </div>
 
-                            <div class="card-body">
+                            <div className="card-body">
                                 <h5 className={`card-title ${styles.title}`}>{item.title}</h5>
                                 <p className="card-text"><small className="text-muted">Category: {item.category}</small></p>
                                 <p className={`card-text ${styles.description}`}>{item.description}</p>
