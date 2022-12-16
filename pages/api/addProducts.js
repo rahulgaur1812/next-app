@@ -12,7 +12,7 @@ const handler = async (req, res) => {
         console.log(req.body);
         try {
             let temp = new Products({
-                id: req.body.title,
+                id: req.body.id,
                 title: req.body.title,
                 price: req.body.price,
                 description: req.body.description,
