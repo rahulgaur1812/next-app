@@ -3,7 +3,7 @@ const connectDb = handler => async (req, res) => {
     if (mongoose.connections[0].readyState) {
         return handler(req, res);
     }
-    await mongoose.connect('mongodb+srv://rahulgaur10441:rahulS%406403@cluster0.qyrtptb.mongodb.net/Ecom?retryWrites=true&w=majority')
+    await mongoose.connect(process.env.MONGO_URL)
     return handler(req, res);
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link';
 import styles from '../../styles/Product.module.css'
 export const getStaticProps = async () => {
-    const responce = await fetch('https://fakestoreapi.com/products');
+    const responce = await fetch(process.env.API_URL);
     const data = await responce.json();
     return {
         props: { productData: data }
@@ -28,7 +28,7 @@ const Batches = (props) => {
                                     <h5 className={`card-title ${styles.title}`}>{item.title}</h5>
                                     <p className="card-text"><small className="text-muted">Category: {item.category}</small></p>
                                     <p className={`card-text ${styles.description}`}>{item.description}</p>
-                                    <p className="card-text"><small className="text-muted">Price: Rs {item.price}</small></p>
+                                    <p className="card-text"><small className="text-muted">Price: ${item.price}</small></p>
                                 </div>
                             </div>
                         </Link>

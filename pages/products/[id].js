@@ -4,7 +4,7 @@ import style from '../../styles/Product.module.scss';
 export const getServerSideProps = async (context) => {
     const id = context.params.id;
     console.log("id", id);
-    const response = await fetch('https://fakestoreapi.com/products/' + id);
+    const response = await fetch(process.env.API_URL + id);
     const data = await response.json();
     return {
         props: { productData: data }
@@ -30,7 +30,7 @@ const ProductId = (props) => {
                 <h5 className="card-title">{props.productData.title}</h5>
                 <p className="card-text">{props.productData.description}</p>
                 <p className="card-text"><small className="text-muted">{props.productData.category}</small></p>
-                <p className="card-text"><small className="text-muted">Price: Rs {props.productData.price}</small></p>
+                <p className="card-text"><small className="text-muted">Price: ${props.productData.price}</small></p>
             </div>
             <div className={style.cardImage}>
                 <img src={props.productData.image} className={`${style.productImage} card-img-bottom`} alt="..." />
