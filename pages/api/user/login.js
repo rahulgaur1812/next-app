@@ -1,6 +1,6 @@
 import Products from "../../../models/Products";
 import connectDb from "../../../middleware/mongoose";
-import users from "../../../models/users";
+
 
 const handler = async (req, res) => {
     if (req.method === 'POST') {
