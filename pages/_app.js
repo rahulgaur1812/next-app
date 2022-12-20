@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Layout from '../common/layout'
 import 'bootstrap/dist/css/bootstrap.css';
-import { Roboto } from 'next/font/google';
+import { Roboto } from '@next/font/google';
 // function MyApp({ Component, pageProps }) {
 //   return <Component {...pageProps} />
 // }
