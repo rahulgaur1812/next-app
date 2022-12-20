@@ -6,7 +6,7 @@ import { Roboto } from 'next/font/google';
 //   return <Component {...pageProps} />
 // }
 
-const Roboto = ({
+const roboto = Roboto({
   weight: ['400', '700'],
   style: ['normal', 'italic'],
   subset: ['latin']
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   //console.log('pageprops', pageProps);
   return (
     <Layout footerstatus={pageProps.footerstatus}>
-      <div className={Roboto.className}>
+      <div className={roboto.className}>
         <Component {...pageProps} />
       </div>
 
